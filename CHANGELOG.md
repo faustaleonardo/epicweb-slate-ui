@@ -1,3 +1,13 @@
+## 2.3.1 (2025-08-12)
+
+### 🩹 Fixes
+
+- **forms:** fix console message 2
+
+### ❤️ Thank You
+
+- faustaleonardo
+
 ## 2.3.0 (2025-08-12)
 
 ### 🚀 Features
