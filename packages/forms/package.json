@@ -1,6 +1,6 @@
 {
   "name": "@slateui/forms",
-  "version": "2.3.3",
+  "version": "0.0.1",
   "description": "Form handling utilities for SlateUI",
   "scripts": {
     "build": "tsup ./index.ts --format esm,cjs --dts",
@@ -27,6 +27,6 @@
   "dependencies": {
     "@slateui/buttons": "2.3.3",
     "@slateui/icons": "2.3.3",
-    "@slateui/core": "2.3.3"
+    "@slateui/core": "*"
   }
 }
