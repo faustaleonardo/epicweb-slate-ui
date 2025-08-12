@@ -40,7 +40,7 @@
     },
     "releaseTagPattern": "releases/v{version}",
     "git": {
-      "commitMessage": "chore: we just released ${version} 🎉"
+      "commitMessage": "chore: we just released v{version} 🎉"
     },
     "changelog": {
       "workspaceChangelog": {
