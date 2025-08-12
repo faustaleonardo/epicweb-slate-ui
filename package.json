@@ -1,6 +1,6 @@
 {
   "name": "@slateui/source",
-  "version": "0.0.1",
+  "version": "2.3.3",
   "description": "Demo repo for the Slate UI design system",
   "author": "Juri Strumpflohner",
   "license": "ISC",
@@ -8,18 +8,18 @@
     "release": "tsx tools/release.ts"
   },
   "devDependencies": {
-    "@nx/js": "^21.3.11",
+    "@nx/js": "20.1.0",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^24.2.1",
     "fs-extra": "^11.3.0",
-    "nx": "21.3.11",
+    "nx": "20.1.0",
     "tsup": "^8.1.0",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4",
-    "verdaccio": "^6.0.5"
+    "verdaccio": "^5.0.4"
   },
   "workspaces": [
     "packages/*"
