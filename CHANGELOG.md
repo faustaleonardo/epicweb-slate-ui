@@ -1,3 +1,9 @@
+## 2.3.0 (2025-08-12)
+
+### 🚀 Features
+
+- some core improvements
+
 ## 2.2.0 (2025-08-12)
 
 ### 🩹 Fixes
