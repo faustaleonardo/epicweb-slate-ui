@@ -28,6 +28,13 @@
   "release": {
     "version": {
       "conventionalCommits": true
+    },
+    "conventionalCommits": {
+      "types": {
+        "docs": {
+          "enabled": true
+        }
+      }
     }
   }
 }
