@@ -11,10 +11,14 @@
     "@swc/helpers": "~0.5.11",
     "nx": "21.3.11",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "verdaccio": "^6.0.5"
   },
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "nx": {
+    "includedScripts": []
+  }
 }

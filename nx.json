@@ -29,13 +29,26 @@
     "version": {
       "conventionalCommits": true
     },
+    "conventionalCommits": {
+      "types": {
+        "fix": {
+          "changelog": {
+            "title": "🐛 Bug Fix"
+          }
+        }
+      }
+    },
+    "releaseTagPattern": "releases/${version}",
+    "git": {
+      "commitMessage": "chore: we just released ${version} 🎉"
+    },
     "changelog": {
-      "workspaceChangelogs": {
+      "workspaceChangelog": {
         "renderOptions": {
           "authors": true,
-					"mapAuthorsToGitHubUsernames": true,
-					"versionTitleDate": true,
-					"commitReferences": true
+          "mapAuthorsToGitHubUsernames": true,
+          "versionTitleDate": true,
+          "commitReferences": true
         }
       }
     }
