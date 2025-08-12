@@ -30,8 +30,14 @@
       "conventionalCommits": true
     },
     "changelog": {
-      "projectChangelogs": true,
-      "workspaceChangelog": true
+      "workspaceChangelogs": {
+        "renderOptions": {
+          "authors": true,
+					"mapAuthorsToGitHubUsernames": true,
+					"versionTitleDate": true,
+					"commitReferences": true
+        }
+      }
     }
   }
 }
