@@ -7,6 +7,11 @@
     },
     "typecheck": {
       "cache": true
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "build/{projectRoot}"
+      }
     }
   },
   "plugins": [
@@ -27,29 +32,11 @@
   ],
   "release": {
     "version": {
-      "conventionalCommits": true
-    },
-    "conventionalCommits": {
-      "types": {
-        "fix": {
-          "changelog": {
-            "title": "🐛 Bug Fix"
-          }
-        }
-      }
-    },
-    "releaseTagPattern": "releases/v{version}",
-    "git": {
-      "commitMessage": "chore: we just released v{version} 🎉"
-    },
-    "changelog": {
-      "workspaceChangelog": {
-        "renderOptions": {
-          "authors": true,
-          "mapAuthorsToGitHubUsernames": true,
-          "versionTitleDate": true,
-          "commitReferences": true
-        }
+      "generatorOptions": {
+        "specifierSource": "conventional-commits",
+        "packageRoot": "build/{projectRoot}",
+        "currentVersionResolver": "git-tag",
+        "skipLockFileUpdate": true
       }
     }
   }
