@@ -38,7 +38,7 @@
         }
       }
     },
-    "releaseTagPattern": "releases/${version}",
+    "releaseTagPattern": "releases/v${version}",
     "git": {
       "commitMessage": "chore: we just released ${version} 🎉"
     },
