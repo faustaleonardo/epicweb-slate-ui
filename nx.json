@@ -26,18 +26,6 @@
     }
   ],
   "release": {
-    "version": {
-      "conventionalCommits": true
-    },
-    "conventionalCommits": {
-      "types": {
-        "docs": {
-          "enabled": true
-        },
-        "style": {
-          "semverBump": "minor"
-        }
-      }
-    }
+    "versionPlans": true
   }
 }
