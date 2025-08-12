@@ -1,0 +1,20 @@
+{
+  "name": "@slateui/source",
+  "version": "0.0.1",
+  "description": "Demo repo for the Slate UI design system",
+  "author": "Juri Strumpflohner",
+  "license": "ISC",
+  "devDependencies": {
+    "@nx/js": "^21.3.11",
+    "@swc-node/register": "~1.9.1",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "nx": "21.3.11",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {}
+}
