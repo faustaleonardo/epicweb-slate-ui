@@ -1,6 +1,6 @@
 {
   "name": "@slateui/core",
-  "version": "0.0.1",
+  "version": "2.3.3",
   "description": "",
   "scripts": {
     "build": "tsup ./index.ts --format esm,cjs --dts",
