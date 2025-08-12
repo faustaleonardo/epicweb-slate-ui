@@ -1,6 +1,6 @@
 {
   "name": "@slateui/buttons",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "Button components for SlateUI",
   "scripts": {
     "build": "tsup ./index.ts --format esm,cjs --dts",
@@ -25,6 +25,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@slateui/core": "2.3.1"
+    "@slateui/core": "2.3.2"
   }
 }
