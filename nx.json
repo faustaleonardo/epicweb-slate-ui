@@ -26,6 +26,12 @@
     }
   ],
   "release": {
-    "versionPlans": true
+    "version": {
+      "conventionalCommits": true
+    },
+    "changelog": {
+      "projectChangelogs": true,
+      "workspaceChangelog": true
+    }
   }
 }
