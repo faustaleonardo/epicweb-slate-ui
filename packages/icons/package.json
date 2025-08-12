@@ -1,6 +1,6 @@
 {
   "name": "@slateui/icons",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Icon system for SlateUI",
   "scripts": {
     "build": "tsup ./index.ts --format esm,cjs --dts",
