@@ -25,8 +25,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@slateui/buttons": "2.3.3",
-    "@slateui/icons": "2.3.3",
+    "@slateui/buttons": "*",
+    "@slateui/icons": "*",
     "@slateui/core": "*"
   }
 }

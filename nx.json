@@ -14,6 +14,7 @@
       }
     }
   },
+  "defaultBase": "main",
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
@@ -23,17 +24,19 @@
         },
         "build": {
           "targetName": "build",
-          "configName": "tsconfig.lib.json",
-          "buildDepsName": "build-deps",
-          "watchDepsName": "watch-deps"
+          "configName": "tsconfig.lib.json"
         }
       }
     }
   ],
   "release": {
     "version": {
-      "specifierSource": "conventional-commits",
-      "currentVersionResolver": "git-tag"
+      "generatorOptions": {
+        "specifierSource": "conventional-commits",
+        "packageRoot": "build/{projectRoot}",
+        "currentVersionResolver": "git-tag",
+        "skipLockFileUpdate": true
+      }
     }
   }
 }

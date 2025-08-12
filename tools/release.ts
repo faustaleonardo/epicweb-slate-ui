@@ -1,6 +1,6 @@
 import { releaseVersion, releaseChangelog, releasePublish } from 'nx/release';
-import path from 'path';
-import fs from 'fs-extra';
+import * as fs from 'fs-extra';
+import * as path from 'path';
 
 async function copyPackagesToBuild() {
   const buildDir = path.join(process.cwd(), 'build');
@@ -39,7 +39,7 @@ async function copyPackagesToBuild() {
 (async () => {
   await copyPackagesToBuild();
 
-  const { projectsVersionData, workspaceVersion } = await releaseVersion({});
+  const { workspaceVersion, projectsVersionData } = await releaseVersion({});
 
   await releaseChangelog({
     versionData: projectsVersionData,
@@ -47,7 +47,6 @@ async function copyPackagesToBuild() {
   });
 
   const publishResult = await releasePublish({});
-
   process.exit(
     Object.values(publishResult).every((result) => result.code === 0) ? 0 : 1
   );
