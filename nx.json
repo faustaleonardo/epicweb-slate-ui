@@ -37,6 +37,12 @@
         "currentVersionResolver": "git-tag",
         "skipLockFileUpdate": true
       }
+    },
+    "changelog": {
+      "workspaceChangelog": {
+        "createRelease": "github",
+        "file": false
+      }
     }
   }
 }

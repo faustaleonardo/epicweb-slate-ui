@@ -3,9 +3,10 @@
   "version": "2.3.3",
   "description": "Demo repo for the Slate UI design system",
   "author": "Juri Strumpflohner",
+  "private": true,
   "license": "ISC",
   "scripts": {
-    "release": "tsx tools/release.ts"
+    "release": "npx nx run-many --target=build && tsx tools/release.ts"
   },
   "devDependencies": {
     "@nx/js": "20.1.0",

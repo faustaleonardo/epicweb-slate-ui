@@ -25,12 +25,8 @@ async function copyPackagesToBuild() {
 
     await fs.copy(srcDir, destDir, {
       filter: (src) => {
-        // Skip node_modules, test files, and dist folders
-        return (
-          !src.includes('node_modules') &&
-          !src.includes('__tests__') &&
-          !src.includes('dist')
-        );
+        // Skip node_modules, test files
+        return !src.includes('node_modules') && !src.includes('__tests__');
       },
     });
   }
